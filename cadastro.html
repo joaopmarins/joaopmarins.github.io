@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Athletica Fit</title>
+	<link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+	<h1 align="center" id="voltar">Cadastre-se</h1>
+	<p align="center">Seja saudável, <i>seja Fit!</i>
+
+	<hr>
+    <p align="center">
+    <a href="Index.html">Voltar</a>
+    </p>
+    <hr width="50%"><br>
+
+    <form>
+    	<fieldset>
+    		<legend>Cadastro</legend>
+
+    		<br><label for="nome">Nome</label>
+    		<br><input type="text" name="nome" id="nome" minlength="3" maxlength="60" required>
+
+    		<br><br><label for="idade">Idade</label>
+    		<br><input type="number" name="idade" id="idade" min="10" required>
+
+    		<br><br><label for="cpf">CPF</label>
+    		<br><input type="text" name="cpf" id="cpf" minlength="11" maxlength="11" placeholder="000.000.000-00" required>
+
+    		<br><br><label for="email">E-mail</label>
+    		<br><input type="email" id="email" name="email" required>
+
+    		<br><br><label for="senha">Senha</label>
+    		<br><input type="password" name="senha" id="senha" minlength="8" maxlength="16" required>
+
+			<br><br><label for="sexo">Sexo:</label><br>
+			M<input type="radio" name="sexo" id="sexo" value="masculino" required>	
+			F<input type="radio" name="sexo" id="sexo" value="feminino" required>	
+			Outro<input type="radio" name="sexo" id="sexo" value="outro" required>	
+
+			<br><br><label for="modalidade">Modalidade(s) de interesse:</label><br>
+			<input type="checkbox" name="modalidade" id="modalidade" value="musculacao">Musculação<br>
+			<input type="checkbox" name="modalidade" id="modalidade" value="funcional">Treino Funcional<br>
+			<input type="checkbox" name="modalidade" id="modalidade" value="pilates">Pilates<br>
+
+			<br><br><label for="observacoes">Observações:</label><br>
+			<textarea name="observacoes" id="observacoes" cols="30" rows="10" placeholder="Escreva aqui suas dúvidas, sugestões ou qualquer coisa que queira compartilhar conosco!"></textarea>
+
+			
+			<br><br>
+			<input type="submit" value="Enviar!">
+    	</fieldset>
+    </form>
+
+</body>
+</html>
